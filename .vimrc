@@ -18,8 +18,12 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
 
+call vundle#end()
 
+" Plugins opening on start
+autocmd vimenter * NERDTree
 
 " Turn on syntax highlighting
 syntax on
